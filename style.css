@@ -17,7 +17,7 @@ body{
 /*font-family: 'Roboto', sans-serif;
     height: 100vh;*/
     display: flex;
-    flex-direction: column;
+    flex-direction:column
 }
 
 .navbar{
@@ -28,22 +28,40 @@ body{
 
 .navbar ul{
     height: 100%;
-    display: flex;
-    justify-content: flex-end;
+    display:flex;
     align-items: center;
     font-size: 14px;
-    
 }
 
 .navbar ul li{
     margin-left: 15px;
-    justify-self: end;
-    
 }
 
 .navbar ul li a{
     color: black;
+    
+}
+
+.left-side-header{
+    justify-content: start;
+    display: flex;
+}
+.left-side-header li{
+    margin-right: 0;
+}
+
+.right-side-header{
     justify-content: end;
+    display: flex;
+}
+.right-side-header li{
+    margin-left: 15px;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+
 }
 
 .logo{
@@ -54,6 +72,7 @@ body{
     justify-content: left;
     color: red;
 }
+
 
 .link:hover{
     text-decoration: underline;
@@ -116,16 +135,19 @@ cursor: pointer;
 footer{
     background-color: #F2F2F2;
     height: 100px;
+    justify-content: center;
+    display: flex;
 }
 .footer-content{
-    display: flex;
+    display: inline-block;
     align-items: center;
     padding: 20px;
     justify-content: space-between;
 }
 .footer-content ul li a{
     font-size: 14px;
-    color: gray;
+    color: black;
+    display: inline;
 }
 .footer-content ul li a:hover{
     text-decoration: underline;
